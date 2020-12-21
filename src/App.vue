@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    <div data-testid="route">{{ $route.fullPath }}</div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/about/hello-world">Hello World</router-link>
     </div>
     <router-view/>
   </div>
